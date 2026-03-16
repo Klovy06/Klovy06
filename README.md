@@ -1,55 +1,32 @@
 ```ts
 /**
- * Jakub Maksymowicz — Full-Stack Web Developer
+ * Jakub Maksymowicz — Web Developer
  * "Code is the modern dialect."
  */
 
-type Developer = {
-  name: string
+type Kuba = {
   location: string
-  main_stack: string[]
-  learning: string[]
-  projects: string[]
+  stack: string[]
   infrastructure: string[]
 }
 
-class Jakub implements Developer {
+const dev: Kuba = {
+  location: "Wolsztyn, Poland",
 
-  name = "Jakub Maksymowicz"
-  location = "Wolsztyn, Poland"
-
-  main_stack = [
+  stack: [
     "JavaScript",
     "TypeScript",
     "Node.js",
     "React",
     "Vite"
-  ]
+  ],
 
-  learning = [
-    "Python",
-    "System Architecture",
-    "High performance backend"
-  ]
-
-  infrastructure = [
+  infrastructure: [
     "Proxmox",
     "Linux",
-    "Self-hosted services",
-    "Zabbix"
+    "Grafana"
   ]
-
-  projects = [
-    "klovy.xyz — personal portfolio",
-    "klovy.pl — education project",
-    "Klovy Chat — modern communication platform"
-  ]
-
-  status() {
-    console.log("Building modern web applications and infrastructure.")
-  }
 }
 
-const dev = new Jakub()
-dev.status()
+console.log("Building modern web applications.")
 ```
